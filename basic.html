@@ -1,0 +1,47 @@
+<link rel=stylesheet href="basicS.css"> 
+<script src="basicJ.js"></script> 
+<div class="container">
+    <div class="box" id="topBox">
+      Top Box
+    </div>
+    <div class="box" id="middleBox">
+      Middle Box
+      <div class="options" id="middleOptions">
+        <div>
+          <label for="colorSelect">Select Color:</label>
+          <select id="colorSelect">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <div>
+          <label for="sizeSelect">Select Size:</label>
+          <select id="sizeSelect">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="bottomBox">
+      Bottom Box
+    </div>
+  </div>
+  <script>
+    document.getElementById('topBox').addEventListener('click', function() {
+  this.style.height = (this.offsetHeight === 50 ? 'auto' : '50px');
+});
+
+document.getElementById('middleBox').addEventListener('click', function() {
+  let options = this.querySelector('.options');
+  options.style.display = (options.style.display === 'block' ? 'none' : 'block');
+});
+
+document.getElementById('bottomBox').addEventListener('click', function() {
+  this.style.height = (this.offsetHeight === 50 ? 'auto' : '50px');
+});
+</script>
+  
+  

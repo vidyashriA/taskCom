@@ -1,0 +1,50 @@
+.box {
+    background-color: hsl(0, 68%, 83%);
+    padding: 50px;
+    margin: 120px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  #middleBox {
+    background-color: #e0e0e0;
+    position: relative;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #6cb2eb;
+    box-shadow: 0 0 5px rgba(108, 178, 235, 0.5);
+  }
+  
